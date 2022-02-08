@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2022 a las 22:12:18
+-- Tiempo de generación: 08-02-2022 a las 23:03:49
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.27
 
@@ -68,7 +68,11 @@ CREATE TABLE `listaserie` (
 
 INSERT INTO `listaserie` (`idList`, `NomList`, `idGenero`, `idTipo`, `idUser`) VALUES
 (1, 'Hajime no Ippo', 8, 3, 1),
-(2, 'Watchmen', 3, 6, 1);
+(2, 'Watchmen', 3, 6, 1),
+(3, 'Slam Dunk', 8, 4, NULL),
+(4, 'Rick & Morty', 1, 2, NULL),
+(5, 'Slam Dunk', 8, 4, NULL),
+(6, 'One punch man', 1, 3, NULL);
 
 -- --------------------------------------------------------
 
@@ -157,7 +161,7 @@ ALTER TABLE `generoprincipal`
 -- AUTO_INCREMENT de la tabla `listaserie`
 --
 ALTER TABLE `listaserie`
-  MODIFY `idList` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idList` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo`
