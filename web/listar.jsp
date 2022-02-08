@@ -63,22 +63,47 @@
                 </tr>
             </thead>
             <tbody>
+            <form action="anadir.jsp">
                 <tr>
                 <th scope="row"></th>
                     <td>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="NomList">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="NomList" >
+                        
                     </td>
                     <td>
-                        <input type="text" class="form-control" placeholder="Genero" aria-label="Genero" name="NomGenero">
+                        <select id="Genero" class="form-select" name="idGenero" aria-required="true">
+                        <option selected>Elige...</option>
+                        <option value="1">Comedia</option>
+                        <option value="2">Acción</option>
+                        <option value="3">Ciencia Ficcion</option>
+                        <option value="4">Drama</option>
+                        <option value="5">Romance</option>
+                        <option value="6">Terror</option>
+                        <option value="7">Aventura</option>
+                        <option value="8">Deportes</option>
+                        <option value="9">Fantasia</option>
+                        <option value="10">Historico</option>
+                        </select>
                     </td>
                     <td>
-                        <input type="text" class="form-control" placeholder="Tipo" aria-label="Tipo" name="NomTipo">
+                        <select id="Tipo" class="form-select" name="idTipo" aria-required="true">
+                            <option selected>Elige...</option>
+                            <option value="1">Pelicula</option>
+                            <option value="2">Serie</option>
+                            <option value="3">Anime</option>
+                            <option value="4">Manga</option>
+                            <option value="5">Life Action</option>
+                            <option value="6">Comic</option>
+                            <option value="7">Documental</option>
+                            <option value="8">Podcast</option>
+                            </select>
                     </td>
                     <td>
                    
-                      <a class="btn btn-info" href="añadir.jsp" >Añadir</a>
+                      <button class="btn btn-info btn-block" type="submit">Añadir</button>
                     </td>
                 </tr>
+            </form>
             </tbody>
             </table>
           </div>
