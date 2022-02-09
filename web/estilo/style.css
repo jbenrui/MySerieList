@@ -3,3 +3,14 @@
 .bg-negro{background-color: rgba(36, 4, 88, 0.657);}
 .bg-listar{background-image: url("../imagenes/fondolistar.png");}
 .bg-opacity{opacity: 95%;}
+
+/*Estilo de anadir*/
+.bg-anadir{ background-color:  #3b291a;}
+.bg-anadirImage{
+    background-image: url("../imagenes/slam-dunk-hanamichi-sakuragi-papel-pintado-1920x1080_48.jpg");
+    background-position: top;
+}
+.color-anadir{color: #e6e0d6;}
+
+.tabla-color{color: #953c20;}
+.bg-tablaAnadir{ background-color:  #ddba88;}
