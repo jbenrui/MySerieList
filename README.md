@@ -8,3 +8,5 @@ La funcionalidad de esta aplicacion es recordarte que series,comics,peliculas...
 Lo primero que  veras al entrar en la aplicacion sera un formulario de Logeo. En el que podras entrar usando el usuario "usuario" y su contraseña correspondiente (usuario). Si los datos son erroneos no te permitira avanzar a la pagina principal. Que en este caso sera el listado de todas las series, peliculas, documentales, mangas, podcasts... Que el usuario ha ido viendo. 
 
 ![](Login.png)
+
+El codigo que he usado en el Login es el siguiente, en el use un archivo externo al del index el cual se llama Login y valida que el usuario existe y guarda el parametro en una variable de sesion para despues de ser validado enviarme a la pagina del listado.
