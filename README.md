@@ -10,3 +10,7 @@ Lo primero que  veras al entrar en la aplicacion sera un formulario de Logeo. En
 ![](Login.png)
 
 El codigo que he usado en para validar el Login es el siguiente, el index pasa primero por este archivo (login.jsp) y valida que el usuario existe y guarda el parametro en una variable de sesion para despues de ser validado enviarme a la pagina del listado.
+
+![](ValidadorDeLogin.png)
+
+### 2º: Listado y Logout
