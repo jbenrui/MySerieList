@@ -14,3 +14,6 @@ El codigo que he usado en para validar el Login es el siguiente, el index pasa p
 ![](ValidadorDeLogin.png)
 
 ### 2º: Listado y Logout
+Después de que el usuario haya sido validado, podra ver la lista de sus series y peliculas que tiene, en el caso de no tener podra añadirlas usando el boton añadir, el cual lo llevara a anadir.jsp. Tambien podra modificar datos y borrar esos datos. En todos los casos pasara por su archivo correspondiente.
+
+![](ValidadorDeLogin.png)
