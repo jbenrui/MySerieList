@@ -2,8 +2,6 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -71,9 +69,9 @@
                         <td>
                             <form method="get" action="modificar.jsp">
                                 <input type="hidden" name="idList" value="<%=listado.getString("idList")%>">
-                                <input type="hidden" name="nomList" value="<%=listado.getString("nomList")%>">
-                                <input type="hidden" name="idGenero" value="<%=listado.getString("idGenero")%>">
-                                <input type="hidden" name="idList" value="<%=listado.getString("idList")%>">
+                                <input type="hidden" name="NomList" value="<%=listado.getString("NomList")%>">
+                                <input type="hidden" name="NomGenero" value="<%=listado.getString("NomGenero")%>">
+                                <input type="hidden" name="NomTipo" value="<%=listado.getString("NomTipo")%>">
                                 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
                             </form>
                         </td>
