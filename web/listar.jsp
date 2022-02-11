@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="./estilo/style.css">
+        <title>MySerieList</title>
     </head>
     <body class="bg-listar bg-opacity">
         <div id="wrapper" class="p-5 mx-auto container-fluid panel panel-default bg-listar">
@@ -55,7 +56,7 @@
                     <th scope="col">Genero</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Modificar</th>
-                    <th scope="col">Acciones</th>
+                    <th scope="col">Borrar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,7 +68,15 @@
                         <td><%=listado.getString("NomList")%></td>
                         <td><%=listado.getString("NomGenero")%></td>
                         <td><%=listado.getString("NomTipo")%></td>
-                        <td>...</td>
+                        <td>
+                            <form method="get" action="modificar.jsp">
+                                <input type="hidden" name="idList" value="<%=listado.getString("idList")%>">
+                                <input type="hidden" name="nomList" value="<%=listado.getString("nomList")%>">
+                                <input type="hidden" name="idGenero" value="<%=listado.getString("idGenero")%>">
+                                <input type="hidden" name="idList" value="<%=listado.getString("idList")%>">
+                                <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
+                            </form>
+                        </td>
                         <td>
                             <form method="get" action="borrar.jsp">
                                 <input type="hidden" name="idList" value="<%=listado.getString("idList")%>"/>
