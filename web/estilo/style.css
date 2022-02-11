@@ -3,6 +3,7 @@
 .bg-negro{background-color: rgba(36, 4, 88, 0.657);}
 .bg-listar{background-image: url("../imagenes/fondolistar.png");}
 .bg-opacity{opacity: 95%;}
+.btn-purple{background-color: purple;}
 
 /*Estilo de anadir*/
 .bg-anadir{ background-color:  #3b291a;}
@@ -14,3 +15,14 @@
 
 .tabla-color{color: #953c20;}
 .bg-tablaAnadir{ background-color:  #ddba88;}
+
+/*Estilo de Borrar*/
+.bg-borrar{ background-color:#4b516d;}
+.bg-borrarImage{
+    background-image: url("../imagenes/fondoBorrar.jpg");
+    background-position: top;
+}
+.color-borrar{color:#dfdbd8;}
+
+.tabla-borrar{color:#e64133;}
+.bg-tablaBorrar{ background-color:#232529;}
