@@ -17,18 +17,20 @@
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/myserieslist","root", "");
           Statement s = conexion.createStatement();
-          //Statement a = conexion.createStatement();
-          //Statement b = conexion.createStatement();
+          Statement a = conexion.createStatement();
+          Statement b = conexion.createStatement();
           
        
           request.setCharacterEncoding("UTF-8");
           String NomList = request.getParameter("NomList");
           String Genero = request.getParameter("idGenero");
-          String NomTipo = request.getParameter("idTipo");
+          String usuario = request.getParameter("usuario");
+          String idTipo = request.getParameter("idTipo");
           ResultSet ConsultaAdd = s.executeQuery("(SELECT * FROM listaserie WHERE NomList='"+NomList+"')");
           
-          //ResultSet consultaNomGenero = a.executeQuery("SELECT * FROM generoprincipal WHERE idGenero='"+Genero+"'");
-          //ResultSet consultaNomTipo = b.executeQuery("SELECT * FROM tipo WHERE idTipo='"+NomTipo+"'");
+          ResultSet consultaGenero = a.executeQuery("SELECT * FROM generoprincipal WHERE idGenero='"+Genero+"'");
+          
+          ResultSet consultaTipo = b.executeQuery("SELECT * FROM tipo WHERE idTipo='"+idTipo+"'");
           
          
     %>
@@ -53,8 +55,15 @@
                     <tr>
                     <th scope="row"></th>
                         <td><%=NomList%></td>
-                        <td><%=Genero%></td>
-                        <td><%=NomTipo%></td>
+                        <td><%consultaGenero.next();
+                                out.print(consultaGenero.getString("NomGenero"));
+                             %>
+                        </td>
+                            
+                        <td><%consultaTipo.next();
+                                out.print(consultaTipo.getString("NomTipo"));
+                            %>
+                        </td>
                         <td>
                             <a class="btn btn-success" href="listar.jsp">Ver en lista</a>
                         </td>
@@ -63,18 +72,18 @@
             </table>
             <%
                 if (ConsultaAdd.getRow() != 0) {
-                        out.println("Lo siento, no se ha podido dar de alta, ya existe juego con este código:  "
+                        out.println("Lo siento, no se ha podido dar de alta, ya existe un Dato con este código:  "
                         + request.getParameter("idList") + ".");
                     } else {
-                     String add = "INSERT INTO listaserie (NomList, idGenero, idTipo) VALUES ("
+                     String add = "INSERT INTO listaserie (NomList, idGenero, idTipo ,idUser) VALUES ("
                         + "'" + request.getParameter("NomList")
                         + "', " + request.getParameter("idGenero")
                         + ", '" + request.getParameter("idTipo")
+                        + "', '" + session.getAttribute("idUser")
                         + "')";
                      s.execute(add);
                     }
                 
-                    
             %>
         </div>
     </div>
