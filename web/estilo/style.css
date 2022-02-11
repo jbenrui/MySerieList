@@ -19,7 +19,7 @@
 /*Estilo de Borrar*/
 .bg-borrar{ background-color:#4b516d;}
 .bg-borrarImage{
-    background-image: url("../imagenes/fondoBorrar.jpg");
+    background-image: url("../imagenes/fondoborrar.jpg");
     background-position: top;
 }
 .color-borrar{color:#dfdbd8;}
