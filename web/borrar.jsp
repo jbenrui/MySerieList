@@ -14,7 +14,7 @@
         <title>MySerieList</title>
     </head>
     <body class="bg-borrarImage bg-opacity">
-        <div class="alert alert-danger w-50 mx-auto mt-5" role="alert">
+        <div class="alert alert-success w-50 mx-auto mt-5" role="alert">
             Ha sido borrado con exito!
         </div>
         <div id="wrapper" class=" p-5 mx-auto container-fluid ">
@@ -40,6 +40,9 @@
           
           ResultSet consultaGenero = a.executeQuery("(SELECT * FROM generoprincipal WHERE idGenero='"+idGenero+"')");
           ResultSet consultaTipo = b.executeQuery("(SELECT * FROM tipo WHERE idTipo='"+idTipo+"')");
+                                  
+         c.execute("DELETE FROM listaserie WHERE IdList='"+idList+"'");
+
     %>
                 <table class="mx-auto w-75 table bg-tablaBorrar tabla-borrar">
                     <thead>
@@ -75,7 +78,6 @@
                         </tr>
                     </tbody>
                 </table>
-
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
