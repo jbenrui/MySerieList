@@ -22,7 +22,9 @@ En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pas
 
 ![](Logout.png)
 
-### 3º: Añadir
+### 3º: Registro Usuario
+
+### 4º: Añadir
 
 Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir lo redigira hacia una pagina que le confirmara que ha sido añadida exitosamente y le mostrara la linea que ha añadido.
 
