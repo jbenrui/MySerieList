@@ -21,4 +21,13 @@ Después de que el usuario haya sido validado, podra ver la lista de sus series 
 En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pasara por el archivo logout.jsp enviandolo al index y borrando la variable de sesión. Aqui puedes ver el codigo.
 
 ![](Logout.png)
-.
+
+### 3º: Añadir
+
+Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir lo redigira hacia una pagina que le confirmara que ha sido añadida exitosamente y le mostrara la linea que ha añadido.
+
+![](anadir.png)
+
+Después para ver la lista completa el usuario puede hacer click sobre ver en lista y le mostrara la lista completa.
+
+![](VistaAnadir.png)
