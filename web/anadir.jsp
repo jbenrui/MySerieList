@@ -21,11 +21,11 @@
                     out.println("Lo siento, no se ha podido dar de alta, ya existe un Dato con este código:  "
                     + request.getParameter("idList") + ".");
                 } else {
-                 String add = "INSERT INTO listaserie (NomList, idGenero, idTipo ,idUser) VALUES ("
+                 String add = "INSERT INTO listaserie (NomList, idGenero, idTipo ,idUser ,puntuacion) VALUES ("
                     + "'" + request.getParameter("NomList")
-                    + "', " + request.getParameter("idGenero")
-                    + ", '" + request.getParameter("idTipo")
-                    + ", '" + session.getAttribute("idUser")
+                    + "', '" + request.getParameter("idGenero")
+                    + "', '" + request.getParameter("idTipo")
+                    + "', '" + session.getAttribute("idUser")
                     + "', '" + request.getParameter("puntuacion")
                     + "')";
                  s.execute(add);
