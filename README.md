@@ -24,6 +24,12 @@ En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pas
 
 ### 3º: Registro Usuario
 
+Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagina de login de registrar y lo llevaria a esta pagina, en la que puede poner su alias y su contraseña. El formulario de registro es algo sencillo. Compruebo que el usuario no exista y si existe salta un mensaje diciendole que ya existe ese alias y que use otro.
+
+![](RegistroUsuario.png)
+
+Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse.
+
 ### 4º: Añadir
 
 Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir lo redigira hacia una pagina que le confirmara que ha sido añadida exitosamente y le mostrara la linea que ha añadido.
