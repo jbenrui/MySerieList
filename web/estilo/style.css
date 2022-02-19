@@ -1,18 +1,23 @@
 /*general layaout*/
 .bg-images{background-image:url("../imagenes/Login/wallpaperLogin.jpg") ;}
-.bg-negro{background-color: rgba(36, 4, 88, 0.657);}
+.bg-negro{background-color: rgba(36, 4, 88,0.9);}
 .bg-listar{background-image: url("../imagenes/fondolistar.png");}
 .bg-opacity{opacity: 95%;}
 .btn-purple{background-color: purple;}
 
+/*Estilo de registro*/
+.bg-registro{background-color: #a88a06;}
+.bg-imageRegistro{background-image: url("../imagenes/Wallpaper_Registro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Estilo de anadir*/
-.bg-anadir{ background-color:  #3b291a;}
+.bg-anadir{ background-color:#3b291a;}
 .bg-anadirImage{
     background-image: url("../imagenes/slam-dunk-hanamichi-sakuragi-papel-pintado-1920x1080_48.jpg");
     background-position: top;
 }
 .color-anadir{color: #e6e0d6;}
-
 .tabla-color{color: #953c20;}
 .bg-tablaAnadir{ background-color:  #ddba88;}
 

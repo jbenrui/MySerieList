@@ -8,6 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" >
         <link rel="stylesheet" href="./estilo/style.css">
         <title>MySerieList</title>
     </head>
@@ -26,7 +27,7 @@
           
         %>
         
-        <div class="card mx-auto mb-3" style="max-width: 540px;">
+        <div class="card mx-auto mb-3" style="max-width: 740px;">
             <%consultaIdUser.next();
                 session.setAttribute("idUser", consultaIdUser.getString("idUser"));
 
@@ -34,7 +35,7 @@
             %>
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="./imagenes/Login/usuarioPerfil.png" class="img-fluid rounded-start" alt="...">
+            <img src="./imagenes/Login/usuarioPerfil.png" class="img-fluid rounded-circle p-4" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -45,8 +46,8 @@
           </div>
         </div>
       </div>
-        <div>
-            <table class="mx-auto w-75 table table-dark table-striped">
+        <div class="table-responsive">
+            <table class="mx-auto w-100 table table-dark table-striped">
                 <thead>
                     <tr>
                     <th scope="col"></th>
@@ -78,7 +79,7 @@
                         <td>
                             <form method="get" action="borrar.jsp">
                                 <input type="hidden" name="idList" value="<%=listado.getString("idList")%>"/>
-                                <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Borrar</button>
+                                <button type="submit"class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Borrar</button>
                             </form>
                         </td>
                     </tr>
@@ -89,7 +90,7 @@
                 </tbody>
             </table>
 
-            <table class="mx-auto w-75 table table-dark table-striped ">
+            <table class="mx-auto w-100 table table-dark table-striped ">
                 <thead>
                     <tr>
                     <th scope="col"></th>
@@ -137,7 +138,7 @@
                         </td>
                         <td>
 
-                          <button class="btn btn-info btn-block" type="submit">Añadir</button>
+                          <button class="btn btn-info btn-block" type="submit"><i class="bi bi-plus-circle-fill"> </i>Añadir</button>
                         </td>
                     </tr>
                 </form>

@@ -13,7 +13,7 @@
   ResultSet consultaUsuario = s.executeQuery("(SELECT * FROM usuario WHERE Alias='"+usuario+"')");
   consultaUsuario.next();
   
-  if (usuario.equals(consultaUsuario.getString("Alias")) && password.equals(consultaUsuario.getString("Contraseña"))) {
+  if (usuario.equals(consultaUsuario.getString("Alias")) && password.equals(consultaUsuario.getString("Contrasena"))) {
     session.setAttribute("usuario", usuario);
     //response.sendRedirect("listar.jsp?usuario="+usuario);
     response.sendRedirect("listar.jsp");
