@@ -73,7 +73,7 @@
                                 <input type="hidden" name="NomList" value="<%=listado.getString("NomList")%>">
                                 <input type="hidden" name="NomGenero" value="<%=listado.getString("NomGenero")%>">
                                 <input type="hidden" name="NomTipo" value="<%=listado.getString("NomTipo")%>">
-                                <input type="hidden" name="NomTipo" value="<%=listado.getString("puntuacion")%>">
+                                <input type="hidden" name="puntuacion" value="<%=listado.getString("puntuacion")%>">
                                 <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span><i class="bi bi-pencil"></i> Modificar</button>
                             </form>
                         </td>
