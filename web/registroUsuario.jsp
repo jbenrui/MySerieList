@@ -25,11 +25,11 @@
                         <form class="row g-3" action="registroUsuario.jsp">
                             <div class="col-md-6">
                             <label for="inputEmail4" class="form-label text-light">Alias</label>
-                            <input type="text" name="newUser" class="form-control" id="alias" placeholder="Boketroll300">
+                            <input type="text" name="newUser" class="form-control" id="alias" placeholder="Boketroll300" required>
                             </div>
                             <div class="col-md-6">
                             <label for="inputPassword4" class="form-label text-light">Password</label>
-                            <input type="password" name="newPassword" class="form-control" id="inputPassword4">
+                            <input type="password" name="newPassword" class="form-control" id="inputPassword4" required>
                             </div>
                             <div>
                             <button type="submit" class="btn btn-primary">Crear Usuario</button>
@@ -50,10 +50,10 @@
           String password = request.getParameter("newPassword");
           
           ResultSet consultaUsuarios = d.executeQuery("(SELECT COUNT(*) AS numUser FROM usuario WHERE Alias='"+usuario+"')");
-          ResultSet NombreUsuarios = s.executeQuery("(SELECT  * FROM usuario WHERE Alias='"+usuario+"')");
           consultaUsuarios.next();
           String numUsuarios = consultaUsuarios.getString("numUser");
-          if ( numUsuarios.equals("1")) {
+
+          if ( numUsuarios.equals("1")){
               %>
                 <div class="alert alert-warning w-50 mx-auto mt-5" role="alert">
                     Lo siento, no se ha podido dar de alta, ya existe un usuario con ese Alias.

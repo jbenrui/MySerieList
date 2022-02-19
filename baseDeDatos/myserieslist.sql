@@ -111,14 +111,14 @@ INSERT INTO `tipo` (`idTipo`, `NomTipo`) VALUES
 CREATE TABLE `usuario` (
   `idUser` int(11) NOT NULL,
   `Alias` varchar(20) NOT NULL,
-  `Contraseña` varchar(20) DEFAULT NULL
+  `Contrasena` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idUser`, `Alias`, `Contraseña`) VALUES
+INSERT INTO `usuario` (`idUser`, `Alias`, `Contrasena`) VALUES
 (1, 'usuario', 'usuario'),
 (2, 'root', 'root');
 
@@ -150,6 +150,9 @@ ALTER TABLE `tipo`
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`idUser`);
 
+ALTER TABLE `usuario`
+  ADD UNIQUE (`Alias`);
+
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
@@ -176,7 +179,7 @@ ALTER TABLE `tipo`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

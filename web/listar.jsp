@@ -12,10 +12,9 @@
         <link rel="stylesheet" href="./estilo/style.css">
         <title>MySerieList</title>
     </head>
-    <body class="bg-listar bg-opacity">
-        <div id="wrapper" class="p-5 mx-auto container-fluid panel panel-default bg-listar">
-        <div class="panel-body">
-        <%
+    <body class="bg-fondoCrudImagen">
+        <div id="wrapper" class="p-5 mx-auto container-fluid panel panel-default bg-fondoCrudImagen">
+            <%
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/myserieslist","root", "");
           Statement s = conexion.createStatement();
@@ -26,8 +25,7 @@
           ResultSet consultaIdUser = u.executeQuery("(SELECT * FROM usuario WHERE Alias='"+usuario+"')");
           
         %>
-        
-        <div class="card mx-auto mb-3" style="max-width: 740px;">
+        <div class="card mx-auto mb-3 bg-usuario color-texto" style="max-width: 640px">
             <%consultaIdUser.next();
                 session.setAttribute("idUser", consultaIdUser.getString("idUser"));
 
@@ -46,14 +44,15 @@
           </div>
         </div>
       </div>
-        <div class="table-responsive">
-            <table class="mx-auto w-100 table table-dark table-striped">
+        <div class=" mx-auto shadow p-3 mb-5 color-anadir rounded text-justify table-responsive bg-fondoCrud">
+            <table class="mx-auto w-100 table bg-tablaCrud color-texto">
                 <thead>
                     <tr>
                     <th scope="col"></th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Genero</th>
                     <th scope="col">Tipo</th>
+                    <th scope="col">Valoración</th>
                     <th scope="col">Modificar</th>
                     <th scope="col">Borrar</th>
                     </tr>
@@ -67,19 +66,21 @@
                         <td><%=listado.getString("NomList")%></td>
                         <td><%=listado.getString("NomGenero")%></td>
                         <td><%=listado.getString("NomTipo")%></td>
+                        <td><%=listado.getString("puntuacion")%></td>
                         <td>
                             <form method="get" action="modificar.jsp">
                                 <input type="hidden" name="idList" value="<%=listado.getString("idList")%>">
                                 <input type="hidden" name="NomList" value="<%=listado.getString("NomList")%>">
                                 <input type="hidden" name="NomGenero" value="<%=listado.getString("NomGenero")%>">
                                 <input type="hidden" name="NomTipo" value="<%=listado.getString("NomTipo")%>">
-                                <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Modificar</button>
+                                <input type="hidden" name="NomTipo" value="<%=listado.getString("puntuacion")%>">
+                                <button type="submit"  class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span><i class="bi bi-pencil"></i> Modificar</button>
                             </form>
                         </td>
                         <td>
                             <form method="get" action="borrar.jsp">
                                 <input type="hidden" name="idList" value="<%=listado.getString("idList")%>"/>
-                                <button type="submit"class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Borrar</button>
+                                <button type="submit"class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span><i class="bi bi-trash3"></i> Borrar</button>
                             </form>
                         </td>
                     </tr>
@@ -90,13 +91,14 @@
                 </tbody>
             </table>
 
-            <table class="mx-auto w-100 table table-dark table-striped ">
+            <table class="mx-auto w-100 table bg-tablaCrud color-texto ">
                 <thead>
                     <tr>
                     <th scope="col"></th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Genero</th>
                     <th scope="col">Tipo</th>
+                    <th scope="col">Valoración</th>
                     <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -105,11 +107,11 @@
                     <tr>
                     <th scope="row"></th>
                         <td>
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="NomList" >
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="NomList" required>
 
                         </td>
                         <td>
-                            <select id="Genero" class="form-select" name="idGenero" aria-required="true">
+                            <select id="Genero" class="form-select" name="idGenero" aria-required="true" required>
                             <option selected>Elige...</option>
                             <option value="1">Comedia</option>
                             <option value="2">Acción</option>
@@ -124,7 +126,7 @@
                             </select>
                         </td>
                         <td>
-                            <select id="Tipo" class="form-select" name="idTipo" aria-required="true">
+                            <select id="Tipo" class="form-select" name="idTipo" aria-required="true" required>
                                 <option selected>Elige...</option>
                                 <option value="1">Pelicula</option>
                                 <option value="2">Serie</option>
@@ -134,6 +136,21 @@
                                 <option value="6">Comic</option>
                                 <option value="7">Documental</option>
                                 <option value="8">Podcast</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select id="valoracion" class="form-select" name="puntuacion" aria-required="true">
+                                <option selected>Valora...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                                 </select>
                         </td>
                         <td>

@@ -11,23 +11,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*Estilo de anadir*/
-.bg-anadir{ background-color:#3b291a;}
-.bg-anadirImage{
-    background-image: url("../imagenes/slam-dunk-hanamichi-sakuragi-papel-pintado-1920x1080_48.jpg");
-    background-position: top;
-}
-.color-anadir{color: #e6e0d6;}
-.tabla-color{color: #953c20;}
-.bg-tablaAnadir{ background-color:  #ddba88;}
+/*Estilo de CRUD*/
+.bg-tablaCrud{background-color: #690d9e ;}
+.bg-fondoCrud{background-color: #330b5b   ;}
+.color-texto{color: #198f9c;}
+.bg-usuario{background-color: #4c0459;}
 
-/*Estilo de Borrar*/
-.bg-borrar{ background-color:#4b516d;}
-.bg-borrarImage{
-    background-image: url("../imagenes/fondoborrar.jpg");
-    background-position: top;
+.bg-fondoCrudImagen{background-image: url("../imagenes/Wallpaper_CRUD.jpg");
+    background-repeat: repeat;
+    background-size: cover;
 }
-.color-borrar{color:#dfdbd8;}
 
-.tabla-borrar{color:#e64133;}
-.bg-tablaBorrar{ background-color:#232529;}
+.btn-color{background-color: #170424;}
