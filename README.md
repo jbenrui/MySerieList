@@ -30,6 +30,8 @@ Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagin
 
 Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse.
 
+
+
 ### 4º: Añadir
 
 Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir lo redigira hacia una pagina que le confirmara que ha sido añadida exitosamente y le mostrara la linea que ha añadido.
