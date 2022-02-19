@@ -34,12 +34,9 @@ Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda 
 
 Y aqui podemos ver como se inicia sesion con el nuevo usuario creado.
 
-<div>
-  <img height="200" width="400"  src="LogeoUsuarioRegistrado.png">
-  <img height="200" width="400"  src="RegistroUsuarioLogeo.png">
-<div>
+![](LogeoUsuarioRegistrado.png)
 
-
+![](RegistroUsuarioLogeo.png)
 
 ### 4º: Añadir
 
