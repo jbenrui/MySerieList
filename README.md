@@ -30,7 +30,11 @@ Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagin
 
 Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse.
 
+![](RegistroUsuarioCodigo.png)
 
+Y aqui podemos ver como se inicia sesion con el nuevo usuario creado.
+
+![](LogeoUsuarioRegistrado.png) ![](RegistroUsuarioLogeo.png)
 
 ### 4º: Añadir
 
