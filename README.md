@@ -36,8 +36,6 @@ Y aqui podemos ver como se inicia sesion con el nuevo usuario creado.
 
 <div>
   <img height="200" width="400"  src="LogeoUsuarioRegistrado.png">
-<div>
-<div>
   <img height="200" width="400"  src="RegistroUsuarioLogeo.png">
 <div>
 
