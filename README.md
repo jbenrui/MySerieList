@@ -48,3 +48,9 @@ Esta parte se activa al introducir datos en el formulario de listar, cuando el u
 Después para ver la lista completa el usuario puede hacer click sobre ver en lista y le mostrara la lista completa.
 
 ![](VistaAnadir.png)
+
+### 5º: Borrar
+
+Cuando el usuario presione este boton, lo redirigira a una pagina en la que podra ver la linea que ha borrado, y un mensaje de que el borrado ha sido exitoso. Ademas de un boton para ver como ha quedado la lista.
+
+![](borrado.png)
