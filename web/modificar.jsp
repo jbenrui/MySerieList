@@ -25,6 +25,7 @@
                 String NomList = request.getParameter("NomList");
                 String NomGenero = request.getParameter("NomGenero");
                 String NomTipo = request.getParameter("NomTipo");
+                String puntuacion = request.getParameter("puntuacion");
                 
                 
             %>
@@ -80,7 +81,7 @@
                         </td>
                         <td>
                             <select id="valoracion" class="form-select" name="puntuacion" aria-required="true">
-                                <option selected>Valora...</option>
+                                <option selected><%=puntuacion%></option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
