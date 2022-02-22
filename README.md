@@ -73,8 +73,8 @@ Cuando el usuario presione este boton, borrara la linea y un mensaje de que el b
 El usuario al presionar este boton es redirigido a una pagina en la cual podra modificar los datos de la linea previamente seleccionada. En la cual tendra dos botones uno para volver si ha presionado por error y otro para aplicar los cambios,en el que si hace click este aplicara los cambios y lo redigira a la pagina principal de nuevo ademas de mostrarle un mensaje diciendo que los cambios se han producido.
 
 <div>
-  <img height="200" width="400" src="AddElemento.png">
-  <img height="200" width="400" src="AddElementoAlerta.png">
+  <img height="200" width="400" src="ModificarDatos.png">
+  <img height="200" width="400" src="ModificarDatosAlerta.png">
 </div>
 
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
