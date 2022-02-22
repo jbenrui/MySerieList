@@ -81,5 +81,8 @@ En este apartado nos encontramos desde la vista del usuario, el cual tiene 2 bot
   <img height="200" width="400" src="BusquedaPorVistos.png">
 </div>
 
+### 9º: Alertas.
+
+### 10º: Video.
 
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
