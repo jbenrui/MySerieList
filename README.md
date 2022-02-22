@@ -1,9 +1,15 @@
 # MySerieList
 
-##                                                                                  Introduccion
+##Introduccion.
 Como su nombre indica, será una aplicación en la que se podrán añadir, modificar y borrar Series/Peliculas/Documentales... vistas, así como añadir información relevante sobre el mismo. El código utilizado se encuentra en la carpeta CRUD de este repositorio.
 
 La funcionalidad de esta aplicacion es recordarte que series,comics,peliculas... has visto o tienes pendiente por ver. Esta idea me surgio debido a que uno de mis pasatiempos es ver anime y leer mangas. Y he visto tantos que cuando me preguntan amigos o conocidos que les puedo recomendar nunca me acuerdo de las series que vi hace tiempo o con un nombre muy complicado. Y seguro que a mas de una persona le pasa igual, por eso he decido hacer esta aplicacion que recopila todas las series que has visto o tienes pendiente de ver, sea cual sea el tipo.
+
+Para ir entrando en detalles, en la siguiente imagen se puede apreciar el modelo relacional de mi base de datos. En la que los requisitos han sido: De los usuarios necesitare saber el alias y su contraseña, así como el código. De las series y lo relacionado quiero saber el código, el nombre, el genero principal, el tipo , la puntuación y estado.Un usuario solo podrá acceder a su propia lista. El usuario solo puede tener una lista.  Una lista puede tener un usuario como máximo y como mínimo 1.
+
+Puesto que habrán muchos géneros y tipos, he preferido sacarlos como una tabla independiente.
+
+
 
 ### 1º: index/login
 
