@@ -17,11 +17,6 @@ Lo primero que  veras al entrar en la aplicacion sera un formulario de Logeo. En
 
 ![Login](Login.png)
 
-El codigo que he usado en para validar el Login es el siguiente, el index pasa primero por este archivo (login.jsp) y valida que el usuario existe y guarda el parametro en una variable de sesion para despues de ser validado enviarme a la pagina del listado.
-
-![CodigoLogin](CodigoLogin.png)
-
-
 
 ### 2º: Vista para los Usuarios y Logout
 Después de que el usuario haya sido validado, podra ver la lista de sus series y peliculas que tiene, en el caso de no tener podra añadirlas usando el boton añadir. Tambien podra modificar datos y borrar esos datos. En todos los casos pasara por su archivo correspondiente.
