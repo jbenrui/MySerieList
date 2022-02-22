@@ -44,11 +44,11 @@ Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagin
 </div>
 
 
-Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse.
+Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse. Dependiendo del valor de la variable confirmacion podra mostrar un mensaje u otro.
 
 <img height="200" width="400" margin="auto" src="CodigoRegistro.png">
 
-Dependiendo del valor de la variable confirmacion podra mostrar un mensaje u otro.
+
 
 
 ### 4º: Añadir
