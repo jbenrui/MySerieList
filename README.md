@@ -9,16 +9,19 @@ Para ir entrando en detalles, en la siguiente imagen se puede apreciar el modelo
 
 Puesto que habrán muchos géneros y tipos, he preferido sacarlos como una tabla independiente.
 
-![](ModeloRelacionalCrud.png)
+![ModeloRelacional](ModeloRelacionalCrud.png)
 
 ### 1º: index/login
 
 Lo primero que  veras al entrar en la aplicacion sera un formulario de Logeo. En el que podras entrar usando el usuario "usuario" y su contraseña correspondiente (usuario). Si los datos son erroneos no te permitira avanzar a la pagina principal. Que en este caso sera el listado de todas las series, peliculas, documentales, mangas, podcasts... Que el usuario ha ido viendo. 
 
+![Login]()
 
 El codigo que he usado en para validar el Login es el siguiente, el index pasa primero por este archivo (login.jsp) y valida que el usuario existe y guarda el parametro en una variable de sesion para despues de ser validado enviarme a la pagina del listado.
 
 
+
+Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
 
 ### 2º: Listado y Logout
 Después de que el usuario haya sido validado, podra ver la lista de sus series y peliculas que tiene, en el caso de no tener podra añadirlas usando el boton añadir, el cual lo llevara a anadir.jsp. Tambien podra modificar datos y borrar esos datos. En todos los casos pasara por su archivo correspondiente.
