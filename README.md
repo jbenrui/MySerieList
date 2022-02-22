@@ -39,8 +39,8 @@ En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pas
 Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagina de login de registrar y lo llevaria a esta pagina, en la que puede poner su alias y su contraseña. El formulario de registro es algo sencillo. Ademas al ser el Alias UNIQUE en la base de datos, los nombres no podran repetirse, si se crea el usuario con exito este aparece con una alerta.
 
 <div>
-  <img height="300" width="400" src="FormularioRegistro.png">
-  <img height="300" width="400" src="FormularioRegistroConAlerta.png">
+  <img height="200" width="400" src="FormularioRegistro.png">
+  <img height="200" width="400" src="FormularioRegistroConAlerta.png">
 </div>
 
 
@@ -51,8 +51,8 @@ Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda 
 Y aqui podemos ver como se inicia sesion con el nuevo usuario creado.
 
 <div>
-  <img height="300" width="500" src="LogeoUsuarioRegistrado.png">
-  <img height="300" width="500" src="RegistroUsuarioLogeo.png">
+  <img height="200" width="400" src="LogeoUsuarioRegistrado.png">
+  <img height="200" width="400" src="RegistroUsuarioLogeo.png">
 </div>
 
 ### 4º: Añadir
