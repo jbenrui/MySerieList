@@ -53,17 +53,20 @@ Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda 
 
 ### 4º: Añadir
 
-Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir lo redigira hacia una pagina que le confirmara que ha sido añadida exitosamente y le mostrara la linea que ha añadido.
+Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir y previamente con los datos añadidos , se añadira automaticamente y le confirmara que ha sido añadida exitosamente.
 
-
-
-Después para ver la lista completa el usuario puede hacer click sobre ver en lista y le mostrara la lista completa.
+<div>
+  <img height="200" width="400" src="AddElemento.png">
+  <img height="200" width="400" src="AddElementoAlerta.png">
+</div>
 
 
 
 ### 5º: Borrar
 
-Cuando el usuario presione este boton, lo redirigira a una pagina en la que podra ver la linea que ha borrado, y un mensaje de que el borrado ha sido exitoso. Ademas de un boton para ver como ha quedado la lista.
+Cuando el usuario presione este boton, borrara la linea y un mensaje de que el borrado ha sido exitoso. Este boton es algo peligroso, ya que si pulsas por error no hay vuelta atras.
+
+![BorrarElemento](BorrarElemento.png)
 
 
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
