@@ -32,7 +32,7 @@ Podemos ver como tambien tenemos 2 botones adicionales, los cuales mas adelante 
 
 En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pasara por el archivo logout.jsp enviandolo al index y borrando la variable de sesión. Aqui puedes ver el codigo.
 
-
+![CodigoLogout](CodigoLogout.png)
 
 ### 3º: Registro Usuario
 
