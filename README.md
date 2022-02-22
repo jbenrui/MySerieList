@@ -28,14 +28,20 @@ Después de que el usuario haya sido validado, podra ver la lista de sus series 
 
 ![VistaUsuarios](VistaUsuarios.png)
 
+Podemos ver como tambien tenemos 2 botones adicionales, los cuales mas adelante son explicados y podeis ver su funcion mediante las capturas de pantalla.
+
 En el caso de que el usuario quiera cerrar sesion dara click en salir y esta pasara por el archivo logout.jsp enviandolo al index y borrando la variable de sesión. Aqui puedes ver el codigo.
 
 
 
 ### 3º: Registro Usuario
 
-Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagina de login de registrar y lo llevaria a esta pagina, en la que puede poner su alias y su contraseña. El formulario de registro es algo sencillo. Compruebo que el usuario no exista y si existe salta un mensaje diciendole que ya existe ese alias y que use otro.
+Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagina de login de registrar y lo llevaria a esta pagina, en la que puede poner su alias y su contraseña. El formulario de registro es algo sencillo. Ademas al ser el Alias UNIQUE en la base de datos, los nombres no podran repetirse, si se crea el usuario con exito este aparece con una alerta.
 
+<div>
+  <img height="300" width="500" src="FormularioRegistro.png">
+  <img height="300" width="500" src="FormularioRegistroConAlerta.png">
+</div>
 
 
 Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse.
