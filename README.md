@@ -40,13 +40,6 @@ Si llega un nuevo usuario y quiere registrarse, presionaria el boton en la pagin
 </div>
 
 
-Aqui esta el codigo que uso para comprobar que el usuario no exista y que pueda registrarse. Dependiendo del valor de la variable confirmacion podra mostrar un mensaje u otro.
-
-<img height="200" width="400" margin="auto" src="CodigoRegistro.png">
-
-
-
-
 ### 4º: Añadir
 
 Esta parte se activa al introducir datos en el formulario de listar, cuando el usuario presione sobre añadir y previamente con los datos añadidos , se añadira automaticamente y le confirmara que ha sido añadida exitosamente.
