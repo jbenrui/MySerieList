@@ -21,7 +21,7 @@ El codigo que he usado en para validar el Login es el siguiente, el index pasa p
 
 ![CodigoLogin](CodigoLogin.png)
 
-Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
+
 
 ### 2º: Vista para los Usuarios y Logout
 Después de que el usuario haya sido validado, podra ver la lista de sus series y peliculas que tiene, en el caso de no tener podra añadirlas usando el boton añadir, el cual lo llevara a anadir.jsp. Tambien podra modificar datos y borrar esos datos. En todos los casos pasara por su archivo correspondiente.
@@ -64,3 +64,4 @@ Después para ver la lista completa el usuario puede hacer click sobre ver en li
 Cuando el usuario presione este boton, lo redirigira a una pagina en la que podra ver la linea que ha borrado, y un mensaje de que el borrado ha sido exitoso. Ademas de un boton para ver como ha quedado la lista.
 
 
+### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
