@@ -66,4 +66,10 @@ El usuario al presionar este boton es redirigido a una pagina en la cual podra m
   <img height="200" width="400" src="ModificarDatosAlerta.png">
 </div>
 
+### 7º: Vista de Root
+
+El usuario administrador tendra una lista con todos los usuarios y las contraseñas existentes, ya que en caso de que un usuario no se acuerde de la suya el sera el encargado de modificarla o enviarsela. Ademas tiene el poder de borrar usuarios y modificarlos asi como añadirlos. Tambien cuenta con suspropias alertas. Las cuales funcionan exactamente igual que la de los usuarios.
+
+![VistaRoot](VistaRoot.png)
+
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
