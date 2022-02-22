@@ -72,4 +72,14 @@ El usuario administrador tendra una lista con todos los usuarios y las contrase�
 
 ![VistaRoot](VistaRoot.png)
 
+### 8º: Busqueda por Estado
+
+En este apartado nos encontramos desde la vista del usuario, el cual tiene 2 botones, ver vistos y ver pendientes. El usuario al añadir sus series, pelis , comics etc ... Tambien introduce el estado de estos. Pero claro, si quiere ver la lista de los que aun no ha visto o tiene pendiente de ver es muy tedioso buscarlo en la lista completa, asi que el usuario puede filtrar por pendientes o por vistos usando esos botones. Al presionar los botones los redirige a una pagina en la que pueden ver la informacion, y si quieren volver pueden usar el boton de volver que los lleva de vuelta a la pagina de la lista completa.
+
+<div>
+  <img height="200" width="400" src="BusquedaPorPendientes.png">
+  <img height="200" width="400" src="BusquedaPorVistos.png">
+</div>
+
+
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
