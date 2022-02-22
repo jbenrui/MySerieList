@@ -9,7 +9,7 @@ Para ir entrando en detalles, en la siguiente imagen se puede apreciar el modelo
 
 Puesto que habrán muchos géneros y tipos, he preferido sacarlos como una tabla independiente.
 
-![](ModeloRelacionalCrud)
+![](ModeloRelacionalCrud.png)
 
 ### 1º: index/login
 
