@@ -97,7 +97,7 @@ Los usuarios (no root), podran buscar desde las distintas pestañas (la lista co
 
 ### 11º: Video.
 
-![[Watch the video](miniatura.png)](https://youtu.be/qteOq5Jl7lw)
+![[Watch the video](Miniatura.png)](https://youtu.be/qteOq5Jl7lw)
 
 
 
