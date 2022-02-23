@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2022 a las 22:12:18
+-- Tiempo de generación: 22-02-2022 a las 14:27:44
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.27
 
@@ -38,7 +38,7 @@ CREATE TABLE `generoprincipal` (
 
 INSERT INTO `generoprincipal` (`idGenero`, `NomGenero`) VALUES
 (1, 'Comedia'),
-(2, 'Acción'),
+(2, 'Accion'),
 (3, 'Ciencia Ficcion'),
 (4, 'Drama'),
 (5, 'Romance'),
@@ -56,26 +56,29 @@ INSERT INTO `generoprincipal` (`idGenero`, `NomGenero`) VALUES
 
 CREATE TABLE `listaserie` (
   `idList` int(11) NOT NULL,
-  `NomList` varchar(60) NOT NULL,
-  `idGenero` int REFERENCES GeneroPrincipal(idGenero)
-								ON DELETE NO ACTION
-								ON UPDATE NO ACTION,
-
-	`idTipo` int REFERENCES Tipo (idTipo)
-								ON DELETE NO ACTION
-								ON UPDATE NO ACTION,
-	`idUser` int REFERENCES usuario (idUser)
-							ON DELETE Cascade
-							ON UPDATE Cascade
+  `NomList` varchar(100) NOT NULL,
+  `idGenero` int(11) DEFAULT NULL,
+  `idTipo` int(11) DEFAULT NULL,
+  `idUser` int(11) DEFAULT NULL,
+  `puntuacion` char(10) DEFAULT NULL,
+  `estado` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `listaserie`
 --
 
-INSERT INTO `listaserie` (`idList`, `NomList`, `idGenero`, `idTipo`, `idUser`) VALUES
-(1, 'Hajime no Ippo', 8, 3, 1),
-(2, 'Watchmen', 3, 6, 1);
+INSERT INTO `listaserie` (`idList`, `NomList`, `idGenero`, `idTipo`, `idUser`, `puntuacion`, `estado`) VALUES
+(1, 'Hajime no Ippo       ', 8, 3, 2, '10', 'Visto'),
+(17, 'Slam Dunk  ', 8, 4, 2, '10', 'Pendiente'),
+(20, 'Rick & Morty        ', 3, 2, 2, '8', 'Visto'),
+(26, 'Mushoku no Tenshi     ', 9, 3, 2, '9', 'Visto'),
+(30, '  One punch man   ', 1, 3, 2, '7', 'Visto'),
+(31, 'My Hero Academia ', 2, 3, 2, '7', 'Visto'),
+(32, 'Full Metal Alchemist ', 9, 4, 2, '10', 'Pendiente'),
+(33, ' Gantz:O ', 3, 5, 2, '6', 'Pendiente'),
+(34, 'Gantz ', 3, 4, 2, '9', 'Visto'),
+(35, 'HunterXHunter      ', 7, 4, 2, '10', 'Pendiente');
 
 -- --------------------------------------------------------
 
@@ -111,7 +114,7 @@ INSERT INTO `tipo` (`idTipo`, `NomTipo`) VALUES
 CREATE TABLE `usuario` (
   `idUser` int(11) NOT NULL,
   `Alias` varchar(20) NOT NULL,
-  `Contrasena` varchar(20) DEFAULT NULL
+  `Contrasena` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -119,8 +122,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idUser`, `Alias`, `Contrasena`) VALUES
-(1, 'usuario', 'usuario'),
-(2, 'root', 'root');
+(1, 'root', 'root'),
+(2, 'usuario', 'usuario'),
+(3, 'jose', '1235'),
+(14, 'JoseAntonio', '1234');
 
 --
 -- Índices para tablas volcadas
@@ -148,10 +153,8 @@ ALTER TABLE `tipo`
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idUser`);
-
-ALTER TABLE `usuario`
-  ADD UNIQUE (`Alias`);
+  ADD PRIMARY KEY (`idUser`),
+  ADD UNIQUE KEY `Alias` (`Alias`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
