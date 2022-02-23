@@ -96,9 +96,7 @@ Los usuarios (no root), podran buscar desde las distintas pestañas (la lista co
 
 
 ### 11º: Video.
-
-![[Watch the video](Miniatura.png)](https://youtu.be/qteOq5Jl7lw)
-
+<a href="https://youtu.be/qteOq5Jl7lw"><img height="200" width="400" src="BusquedaPorPendientes.png"></a>
 
 
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
