@@ -82,6 +82,12 @@ En este apartado nos encontramos desde la vista del usuario, el cual tiene 2 bot
 </div>
 
 ### 9º: Alertas.
+Las alertas siguen la misma estructura, es un if que dependiendo del valor de la variable confirmacion mostrara un determinado mensaje. Si el valor es "." he decido que no mostraria ningun mensaje. Para que el mensaje desaparezca el usuario debe realizar o bien otra accion, o cerrar sesion. En este caso si opta por realizar otra opcion el valor de confirmacion cambiara  y sera "." . En el caso de modificar si pulsara volver, no apareceria ningun mensaje o si ya habia un mensaje este desaparecera. Aqui se puede apreciar el codigo a grandes rasgos de la estructura seguida. (Todas las alertas funcionan de la misma manera, aunque los mensajes son distintos.)
+
+
+
+ 
+
 
 ### 10º: Video.
 
