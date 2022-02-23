@@ -89,6 +89,7 @@ Las alertas siguen la misma estructura, es un if que dependiendo del valor de la
  
 
 
-### 10º: Video.
+### 10º: Buscar.
+Los usuarios (no root), podran buscar desde las distintas pestañas (la lista completa, desde la lista de visto y desde la lista de pendientes) el nombre de una serie, peli, manga, etc en concreto. Para ello escribiran el nombre en la barra del buscador y presionaran en buscar. Esta accion los rediregira a una pagina externa en la cual vera la linea de la pelicula en cuestion.
 
 ### Los usuarios que se usan para probar la aplicacion son usuario ( pasword: usuario) y root ( pasword: root). Aunque tambien te recomiendo que pruebes a crear tu propio usuario :D.
